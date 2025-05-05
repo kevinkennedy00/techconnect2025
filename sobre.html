@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre o Evento</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #121212;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      nav {
+        background-color: #1f1f1f;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      nav ul li a {
+        color: #ccc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #00bcd4;
+      }
+
+      main {
+        flex: 1;
+        padding: 30px;
+      }
+
+      section {
+        background-color: #1c1c1c;
+        padding: 30px 50px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        margin: 30px auto;
+        text-align: center;
+      }
+
+      section h2 {
+        text-align: center;
+        color: #00bcd4;
+      }
+
+      section ul {
+        padding-left: 0;
+        display: inline-block;
+        text-align: left;
+      }
+
+      section ul li {
+        margin-bottom: 10px;
+        color: #ccc;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1f1f1f;
+        color: #ccc;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+
+      footer ul li {
+        margin-bottom: 5px;
+        color: #999;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="assets/banner.welcomepage.png" alt="banner do evento" />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="welcomepage.html" target="_blank">Início</a></li>
+        <li><a href="sobre.html">Sobre o evento</a></li>
+        <li><a href="programacao.html" target="_blank">Programação</a></li>
+        <li><a href="palestrantes.html" target="_blank">Palestrantes</a></li>
+        <li><a href="inscricoes.html" target="_blank">Inscrições</a></li>
+        <li><a href="contato.html" target="_blank">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Atividades do TechConnect 2025</h2>
+        <ul>
+          <li>
+            Workshops imersivos em
+            <strong>HTML, JavaScript, Python e Java</strong>, com especialistas
+            do mercado e práticas guiadas.
+          </li>
+          <li>
+            Painéis de discussão sobre temas emergentes como
+            <strong>Inteligência Artificial</strong>,
+            <strong>Cloud Computing</strong> e
+            <strong>Segurança da Informação</strong>.
+          </li>
+          <li>
+            Espaço para <strong>networking</strong> com profissionais de grandes
+            empresas e recrutadores em busca de talentos.
+          </li>
+          <li>
+            <strong>Feira tecnológica</strong> com demonstrações de startups e
+            grandes marcas, trazendo lançamentos e tendências do setor.
+          </li>
+          <li>
+            Hackathons e desafios para colocar em prática seus conhecimentos e
+            competir por prêmios exclusivos.
+          </li>
+          <li>
+            Área de relaxamento e experiências interativas para garantir que o
+            evento seja produtivo e agradável.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Obrigado por visitar o TechConnect 2025!</p>
+      <p style="color: #00bcd4">Equipe</p>
+      <ul>
+        <li>Claudio Alves dos Santos Filho</li>
+        <li>Gilberto Henriques da Fonseca Segundo</li>
+        <li>Kevin Kennedy Dantas Sampaio</li>
+        <li>Nilson Gabriel Santos Silva</li>
+      </ul>
+      <p>&copy; 2025</p>
+    </footer>
+  </body>
+</html>

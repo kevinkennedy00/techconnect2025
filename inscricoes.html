@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrições</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #121212;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        flex-wrap: wrap;
+      }
+
+      header img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-right: 40px;
+        border-radius: 8px;
+      }
+
+      header .banner-text {
+        max-width: 400px;
+        text-align: left;
+      }
+
+      header .banner-text h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      header .banner-text p {
+        font-size: 1.3rem;
+        color: #ccc;
+        line-height: 1.5;
+      }
+
+      nav {
+        background-color: #1f1f1f;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      nav ul li a {
+        color: #ccc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #00bcd4;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      main img {
+        display: block;
+        max-width: 100%;
+        width: 600px;
+        margin: 20px auto;
+        border-radius: 8px;
+      }
+
+      main h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .inscricoes {
+        padding: 40px 20px;
+        background-color: #1f1f1f;
+        border-radius: 8px;
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      .inscricoes h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .inscricoes p {
+        color: #ccc;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .botao-inscricao {
+        display: inline-block;
+        background-color: #00bcd4;
+        color: #121212;
+        padding: 12px 25px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .botao-inscricao:hover {
+        background-color: #0097a7;
+        color: white;
+      }
+
+      section {
+        background-color: #1c1c1c;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      section h2 {
+        margin-top: 0;
+      }
+
+      section ul {
+        display: inline-block;
+        text-align: left;
+        padding-left: 0;
+      }
+
+      section ul li {
+        margin-bottom: 10px;
+        color: #ccc;
+        list-style-position: inside;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1f1f1f;
+        color: #ccc;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+
+      footer ul li {
+        margin-bottom: 5px;
+        color: #999;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        header img {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+
+        header .banner-text {
+          text-align: center;
+        }
+
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="assets/banner.welcomepage.png" alt="banner do evento" />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="welcomepage.html" target="_blank">Início</a></li>
+        <li><a href="sobre.html" target="_blank">Sobre o evento</a></li>
+        <li><a href="programacao.html" target="_blank">Programação</a></li>
+        <li><a href="palestrantes.html" target="_blank">Palestrantes</a></li>
+        <li><a href="inscricoes.html">Inscrições</a></li>
+        <li><a href="contato.html" target="_blank">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="inscricoes" id="inscricoes">
+        <h2>Garanta sua Vaga no TechConnect 2025</h2>
+        <p>
+          As inscrições já estão abertas! Não perca a oportunidade de fazer
+          parte do maior evento de tecnologia do ano.
+        </p>
+        <a href=https://forms.gle/knyJWriJ1rEx6Zy56 target="_blank" class="botao-inscricao"
+          >Inscreva-se Agora</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p>Obrigado por visitar o TechConnect 2025!</p>
+      <p style="color: #00bcd4">Equipe</p>
+      <ul>
+        <li>Claudio Alves dos Santos Filho</li>
+        <li>Gilberto Henriques da Fonseca Segundo</li>
+        <li>Kevin Kennedy Dantas Sampaio</li>
+        <li>Nilson Gabriel Santos Silva</li>
+      </ul>
+      <p>&copy; 2025</p>
+    </footer>
+  </body>
+</html>
