@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nossos Contatos</title>
+    <!-- Adicionamos uma leve estilização via inline, com o atributo style em todas as paginas-->
+
+    <!--Construímos todo esqueleto da pagina seguindo ordem semantica, ao inves de utilizar div para tudo-->
+
+    <!--O body é o corpo da pagina, onde fica toda a informação visível ao usuario-->
   </head>
   <body
     style="
@@ -121,8 +126,10 @@
         <p style="color: #ccc; margin-bottom: 20px; font-size: 1.1rem">
           Entre em contato com a organização do TechConnect 2025. Preencha o
           formulário abaixo ou envie diretamente para
-          <strong
-            ><a
+          <strong>
+            <!-- mailto: é um protocolo que, ao ser clicado, tenta abrir o cliente de e-mail padrão do usuário já preenchendo o campo "Para" com o e-mail fornecido -->
+
+            <a
               href="mailto:tech.connect.unifacisa@gmail.com"
               style="color: #00bcd4; text-decoration: none; font-weight: bold"
               >tech.connect.unifacisa@gmail.com</a
@@ -130,6 +137,8 @@
           >.
         </p>
 
+        <!--<form> gera um formulario em nossa pagina.
+          onde por meio de um methodo post, os dados são submetidos ao nosso email de contato-->
         <form
           action="https://formsubmit.co/tech.connect.unifacisa@gmail.com"
           method="POST"
@@ -142,7 +151,14 @@
           "
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="http://127.0.0.1:5502/obrigado.html" />
+
+          <!--apos a mensagem ser enviada com sucesso, o valor de torna true, ativando o "_next" que direcionada o usuario a uma pagina
+          de agradecimento, onde ele sera direcionado a nossa pagina principal-->
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5502/obrigado.html"
+          />
           <input
             type="text"
             name="nome"

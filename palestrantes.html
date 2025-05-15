@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Os Palestrantes</title>
 </head>
+<!-- Adicionamos uma leve estilização via inline, com o atributo style em todas as paginas-->
+
+<!--Construímos todo esqueleto da pagina seguindo ordem semantica, ao inves de utilizar div para tudo-->
+
+<!--O body é o corpo da pagina, onde fica toda a informação visível ao usuario-->
+
+
+
+
+
 <body style="margin:0; padding:0; background-color:#121212; color:white; font-family:Arial, sans-serif;">
 
 <header style="background-color:#121212; padding:20px 0; text-align:center;">
@@ -26,8 +36,11 @@
 
   <section style="padding:30px; background-color:#1c1c1c; border-radius:8px; margin:30px 0;">
     <h2 style="text-align:center; color:white; margin-bottom:30px;">Palestrantes Confirmados</h2>
-
-    <div style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
+  
+    <!-- <article> serve para separar por ordem semantica, conteudos independentes, como são os cards dos nosso palestrantes-->
+    <article style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
+      
+      <!--<div> neste caso se faz necessario para melhor estruturação da pagina e uso  flex box.-->
       <div style="width:150px; height:150px; background-color:#333; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
         <img src="assets/nelioalves.jpg" alt="nelioalves" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:8px;">
       </div>
@@ -36,9 +49,9 @@
         <p style="color:#ccc; margin-bottom:10px;">Especialista em Java e backend. Atua em projetos de grande porte ajudando empresas a criar soluções robustas e escaláveis com Java e Spring Framework.</p>
         <a href="https://devsuperior.com.br/" target="_blank" style="display:inline-block; background-color:#00bcd4; color:#121212; padding:8px 15px; border-radius:4px; text-decoration:none; font-weight:bold;">Conhecer mais</a>
       </div>
-    </div>
-
-    <div style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
+    </article>
+  
+    <article style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
       <div style="width:150px; height:150px; background-color:#333; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
         <img src="assets/felipedeschamps.jpg" alt="felipedeschamps" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:8px;">
       </div>
@@ -47,9 +60,9 @@
         <p style="color:#ccc; margin-bottom:10px;">Ícone no ensino de programação e IA. Produz conteúdos que ajudam desenvolvedores a utilizar automação e inteligência artificial para acelerar suas rotinas.</p>
         <a href="https://curso.dev/" target="_blank" style="display:inline-block; background-color:#00bcd4; color:#121212; padding:8px 15px; border-radius:4px; text-decoration:none; font-weight:bold;">Conhecer mais</a>
       </div>
-    </div>
-
-    <div style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
+    </article>
+  
+    <article style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
       <div style="width:150px; height:150px; background-color:#333; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
         <img src="assets/manodeyvin.jpg" alt="manodeivim" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:8px;">
       </div>
@@ -58,9 +71,9 @@
         <p style="color:#ccc; margin-bottom:10px;">Referência em conteúdo prático e ensino de programação. Foca em ensinar com projetos reais para transformar estudantes em profissionais de destaque.</p>
         <a href="https://linktr.ee/deyvin.eth" target="_blank" style="display:inline-block; background-color:#00bcd4; color:#121212; padding:8px 15px; border-radius:4px; text-decoration:none; font-weight:bold;">Conhecer mais</a>
       </div>
-    </div>
-
-    <div style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
+    </article>
+  
+    <article style="display:flex; align-items:flex-start; justify-content:flex-start; background-color:#181818; padding:20px; border-radius:8px; margin:0 auto 20px auto; gap:20px; max-width:900px; width:100%;">
       <div style="width:150px; height:150px; background-color:#333; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
         <img src="assets/lucasmontano.jpg" alt="lucasmontano" style="width:100%; height:100%; object-fit:cover; object-position:center; border-radius:8px;">
       </div>
@@ -69,9 +82,10 @@
         <p style="color:#ccc; margin-bottom:10px;">Influente no universo mobile, compartilha conhecimento sobre como criar aplicações escaláveis e prontas para o futuro no ecossistema Android e iOS.</p>
         <a href="https://lucasmontano.com/" target="_blank" style="display:inline-block; background-color:#00bcd4; color:#121212; padding:8px 15px; border-radius:4px; text-decoration:none; font-weight:bold;">Conhecer mais</a>
       </div>
-    </div>
-
+    </article>
+  
   </section>
+  
 
 </main>
 

@@ -5,18 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechConnect 2025</title>
 </head>
+
+
+<!-- Adicionamos uma leve estilização via inline, com o atributo style em todas as paginas-->
+
+<!--Construímos todo esqueleto da pagina seguindo ordem semantica, ao inves de utilizar div para tudo-->
+
+<!--O body é o corpo da pagina, onde fica toda a informação visível ao usuario-->
+
 <body style="margin:0; padding:0; background-color:#121212; color:white; font-family:Arial, sans-serif;">
 
+<!--iniciamos utilizando do header que é basicamente a cabeça da pagina, onde fica todo o conteúdo introdutorio e de identidade da pagina. -->
   <header style="background-color:#121212; display:flex; align-items:center; justify-content:center; padding:50px 20px; flex-wrap:wrap;">
-    <img src="assets/banner.welcomepage.png" alt="banner" style="width:100%; max-width:400px; height:auto; margin-right:40px; border-radius:8px;">
-    <div style="max-width:400px; text-align:left;">
+    
+    <!--dividimos o banner e o texto lateral em duas seções  distintas, para melhor dividir o codigo-->
+    <section style="max-width:400px; text-align:left; margin: 0px 10px;">
+      
+      <!-- a tag <img> é alguma das tags que não precisam de um fechamento, sempre importante preenche o campo alt, pois é uma ferramenta de acessibilidade indispensável.-->
+      <img src="assets/banner.welcomepage.png" alt="banner" style="width:100%; max-width:400px; height:auto; margin-right:40px; border-radius:8px;">
+    </section>
+    
+    <section style="max-width:400px; text-align:left;">
+
+      <!-- a tag <h1> serve para o titulo principal de nossa página e os demais uso, devem seguir uma ordem de hierarquia
+        onde h1>h2>h3 e assim por diante-->
       <h1 style="font-size:2.2rem; margin-bottom:10px; line-height:1.2;">TechConnect 2025</h1>
+
+      <!-- a tag <p> serve para inserir um paragrafo dentro do nosso bloco-->
       <p style="font-size:1.3rem; color:#ccc; line-height:1.5;">Conectando ideias, criando o futuro</p>
-    </div>
+    </section>
   </header>
 
+
+  <!-- seguimos agora para a tag <nav> que é basicamente um menu da outras paginas disponivels dentro de nossa página
+    outra tag semelhante a ela é tag <aside> muito utilizada em blogs e sites de noticias, para relacionar materias com temas semelhantes 
+      a da nossa navegação atual-->
   <nav style="background-color:#1f1f1f; padding:10px 0; position:sticky; top:0; z-index:1000;">
+
+    <!-- seguindo temos nossa primeira lista não ordenada, que são as outras opções de nagavegações de nossa pagina-->
     <ul style="list-style:none; padding:0; margin:0; display:flex; gap:20px; justify-content:center;">
+
+      <!--cada tag <li> significa basicamente item list, um item de nossa lista
+        dentro dela utilizamos a tag <a> que é a tag onde podemos inserir links em nosso site
+          além de definir comportamentos específicos ao nosso clique
+-->
       <li><a href="welcomepage.html" style="color:#ccc; text-decoration:none; font-weight:bold;">Início</a></li>
       <li><a href="sobre.html" target="_blank" style="color:#ccc; text-decoration:none; font-weight:bold;">Sobre o evento</a></li>
       <li><a href="programacao.html" target="_blank" style="color:#ccc; text-decoration:none; font-weight:bold;">Programação</a></li>
@@ -26,11 +58,14 @@
     </ul>
   </nav>
 
+  <!-- a tag <main> é onde fica a parte principal do conteúdo da página-->
   <main style="padding:30px;">
     <h1 style="text-align:center; margin-bottom:20px;">O Futuro em suas mãos</h1>
     <img src="assets/welcomepage.png" alt="O Futuro em suas mãos" style="display:block; max-width:100%; width:600px; margin:20px auto; border-radius:8px;">
   </main>
 
+
+  <!-- a tag <footer> é basicamente o nosso roda pé, onde colocamos informações pertinentes como contatos, responsáveis pelo desenvolvimento da pagina entre outros.-->
   <footer style="text-align:center; padding:20px; background-color:#1f1f1f; color:#ccc;">
     <p>Obrigado por visitar o TechConnect 2025!</p>
     <p style="color:#00bcd4;">Equipe</p>
