@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/banner.welcomepage.png"
+        alt="banner do evento"
+      />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="welcomepage.html" target="_blank">Início</a></li>
+        <li><a href="sobre.html" target="_blank">Sobre o evento</a></li>
+        <li><a href="programacao.html" target="_blank">Programação</a></li>
+        <li><a href="palestrantes.html" target="_blank">Palestrantes</a></li>
+        <li><a href="inscricoes.html" target="_blank">Inscrições</a></li>
+        <li><a href="contato.html" target="_blank">Contato</a></li>
+        <li><a href="galeria.html">Galeria do Evento</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="galeria-grid">
+          <a href="#img1" class="card">
+            <img
+              src="assets/galeriaextra/imagen1.png"
+              alt="Imagem 1"
+            />
+          </a>
+          <a href="#img2" class="card">
+            <img
+              src="assets/galeriaextra/imagen2.png"
+              alt="Imagem 2"
+            />
+          </a>
+          <a href="#img3" class="card">
+            <img
+              src="assets/galeriaextra/imagen3.png"
+              alt="Imagem 3"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- Lightboxes CSS-only: o próprio <a> é o overlay clicável -->
+      <a href="#" id="img1" class="lightbox">
+        <img
+          src="assets/galeriaextra/imagen1.png"
+          alt="Imagem 1 Ampliada"
+        />
+      </a>
+      <a href="#" id="img2" class="lightbox">
+        <img
+          src="assets/galeriaextra/imagen2.png"
+          alt="Imagem 2 Ampliada"
+        />
+      </a>
+      <a href="#" id="img3" class="lightbox">
+        <img
+          src="assets/galeriaextra/imagen3.png"
+          alt="Imagem 3 Ampliada"
+        />
+      </a>
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <p class="company-name">RoberTech</p>
+        <p>© 2025</p>
+        <p>Obrigado pelo apoio:</p>
+        <div class="sponsors">
+          <a
+            href="https://aws.amazon.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/awslogo.jpg" alt="AWS Logo" />
+          </a>
+          <a
+            href="https://www.jetbrains.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/jetbraislogo.png" alt="JetBrains Logo" />
+          </a>
+          <a
+            href="https://www.oracle.com/br/java/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/oraclelogo.png" alt="Oracle Java Logo" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
