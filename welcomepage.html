@@ -4,157 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechConnect 2025</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-        color: white;
-        font-family: Arial, sans-serif;
-      }
-
-      header {
-        background-color: #121212;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 50px 20px;
-        flex-wrap: wrap;
-      }
-
-      header img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin-right: 40px;
-        border-radius: 8px;
-      }
-
-      header .banner-text {
-        max-width: 400px;
-        text-align: left;
-      }
-
-      header .banner-text h1 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-        line-height: 1.2;
-      }
-
-      header .banner-text p {
-        font-size: 1.3rem;
-        color: #ccc;
-        line-height: 1.5;
-      }
-
-      nav {
-        background-color: #1f1f1f;
-        padding: 10px 0;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-      }
-
-      nav ul li a {
-        color: #ccc;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      nav ul li a:hover {
-        color: #00bcd4;
-      }
-
-      main {
-        padding: 30px;
-      }
-
-      main img {
-        display: block;
-        max-width: 100%;
-        width: 600px;
-        margin: 20px auto;
-        border-radius: 8px;
-      }
-
-      main h1 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      section {
-        background-color: #1c1c1c;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 30px;
-        text-align: center;
-      }
-
-      section h2 {
-        margin-top: 0;
-      }
-
-      section ul {
-        display: inline-block;
-        text-align: left;
-        padding-left: 0;
-      }
-
-      section ul li {
-        margin-bottom: 10px;
-        color: #ccc;
-        list-style-position: inside;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #1f1f1f;
-        color: #ccc;
-      }
-
-      footer ul {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0;
-      }
-
-      footer ul li {
-        margin-bottom: 5px;
-        color: #999;
-      }
-
-      @media (max-width: 600px) {
-        header {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        header img {
-          margin-right: 0;
-          margin-bottom: 20px;
-        }
-
-        header .banner-text {
-          text-align: center;
-        }
-
-        nav ul {
-          flex-direction: column;
-          gap: 10px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
@@ -178,13 +28,12 @@
 
     <main>
       <h1>O Futuro em suas mãos</h1>
-
       <img src="assets/welcomepage.png" alt="O Futuro em suas mãos" />
     </main>
 
     <footer>
       <p>Obrigado por visitar o TechConnect 2025!</p>
-      <p style="color: #00bcd4">Equipe</p>
+      <p class="custom-color">Equipe</p>
       <ul>
         <li>Claudio Alves dos Santos Filho</li>
         <li>Gilberto Henriques da Fonseca Segundo</li>
